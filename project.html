@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title> Emirates Stadium </title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h3 id="h1">North London, Home of the Arsenal FC</h3><h4>
+                    <input data-bind="value:chosen_loc,event:{keyup:search},valueUpdate:'afterkeydown'" placeholder="Explore North London"><br><br>
+                    <ul data-bind="foreach:markers">
+                        <li class="location" data-bind="text:title,visible:list,click: oncl">
+                        </li><hr class="line">
+                    </ul></h4>
+            </div>
+            <div class="col-md-10">
+                <div id="map"></div>
+            </div>
+        </div>
+        <div>
+            <h2 data-bind="text: error"></h2>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.js">
+    </script>
+    <script src="js/knockout-3.4.2.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDCl3TASOTJCufZ3VGDH89LaMSJdgRPKho&callback=initMap" onerror="errorocc()">
+    </script>
+
+</body>
+</html>

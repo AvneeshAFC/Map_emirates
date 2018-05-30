@@ -1,0 +1,36 @@
+html,body {
+    height:100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#head {
+    color:#FF0;
+    font-weight:700;
+    text-decoration:underline;
+}
+
+#h1 {
+    color:red;
+    font-weight:100px;
+    font-family: 'Pacifico', cursive;
+}
+
+h4 {
+    color:red;
+    font-weight:100px;
+}
+
+.line{
+    border-style: solid;
+    border-width: medium;
+    color: yellow;
+}
+
+.location:hover {
+    color: blue;
+}
+
+#map {
+    height:100%;
+    overflow: hidden;
+}
